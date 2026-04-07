@@ -7,7 +7,7 @@ model = YOLO('yolo11n.pt')
 print("Starting YOLO training on the GPU...")
 results = model.train(
     data='data.yaml',   # Your clean config file
-    epochs=25,          # How many times to study the dataset
+    epochs=100,          # How many times to study the dataset
     imgsz=640,          # Standardize image size
     batch=16,           # How many images to memorize at once
     device=0,           # 0 means use the first GPU available (your T4)
