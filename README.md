@@ -22,7 +22,7 @@ Our custom-trained YOLO11n integration drastically surpassed generic models by d
 | Faster R-CNN (ResNet50) | ~41M | ~85%-90% | Latency Bottleneck |
 | MobileNet-SSD | ~5M | ~65%-70% | Poor Distance Mapping |
 | YOLOv8n (Generalization Base)| ~3.2M | ~82%-85% | Nominal Baseline |
-| **YOLO11 Custom (Ours)** | **<3.0M**| **97.31%** | **Exceptional (SOTA)**|
+| **YOLO11 Custom (Ours)** | **<3.0M**| **97.31%** | **Better**|
 
 ### Model Inferences
 ![Model Inferences](github_assets/val_batch2_pred.jpg)
