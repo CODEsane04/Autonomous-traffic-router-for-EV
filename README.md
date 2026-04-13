@@ -73,8 +73,20 @@ cd cv_bend
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### Feed Network Traffic
-Once the backend is initialized, it opens the `/detect_v2` endpoint on port `8000`. You can pipe sequential camera frames via base64 encoded strings natively from your frontend or testing scripts to visualize the priority scores and the generated 10-second traffic schedules.
+### 4. Start the Frontend Dashboard
+
+The visual interface is built with React. Open a new terminal instance (leave the backend running) and start the frontend development server:
+
+```bash
+cd Autonomous-traffic-router-for-EV-main/cv_fend/my-app
+npm install
+npm start
+```
+
+The dashboard will automatically launch in your default browser at `http://localhost:3000`.
+
+### 5. Feed Network Traffic
+Once the backend is initialized on port `8000` and the frontend on port `3000`, the dashboard will interface directly with the `/detect_v2` API endpoint. You can pipe sequential camera frames via the frontend UI to instantly visualize the real-time parsing, priority scoring, and the generated macroscopic traffic schedules.
 
 ---
 
